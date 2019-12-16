@@ -1,7 +1,12 @@
 ### CS-433: Machine learning - Project 1 ReadMe - BIZEUL Alice, DERVAUX Juliane, SIERRO Florent
 ### Team: "BuzzLastyear" 
 
-## Code & Folder
+## Folder
+* data: it contains all the raw data and also the cleaned one after being processed
+* dico: it contains a dictionnary of common english spelling errors, found on internet: http://luululu.com/tweet/ 
+* ...:
+
+## Code  
 
 
 ## Run our project
