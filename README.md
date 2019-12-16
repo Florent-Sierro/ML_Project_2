@@ -1,4 +1,4 @@
-### CS-433: Machine learning - Project 1 ReadMe - BIZEUL Alice, DERVAUX Juliane, SIERRO Florent
+### CS-433: Machine learning - Project 2 ReadMe - Twitter : A Sentiment Analysis
 ### Team: "BuzzLastyear" 
 
 ## Folder
@@ -21,7 +21,7 @@
 * sklearn
 * ....
 
-## Collaborators
+## Collaborators : BIZEUL Alice, DERVAUX Juliane, SIERRO Florent
 * Bizeul Alice:	 	bizeul.alice@epfl.ch
 * Dervaux Juliane:	dervaux.juliane@epfl.ch
 * Sierro Florent:	florent.sierro@epfl.ch
