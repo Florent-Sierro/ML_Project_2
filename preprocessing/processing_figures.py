@@ -12,7 +12,7 @@ import pandas as pd
 
 
 
-with open("../data/train_pos.txt", mode='rt', encoding='utf-8') as rf: 
+with open("../data/train_pos_full.txt", mode='rt', encoding='utf-8') as rf: 
 
     indice=[]
     size_pos=[]
@@ -25,7 +25,7 @@ with open("../data/train_pos.txt", mode='rt', encoding='utf-8') as rf:
 
 
 
-with open("../data/train_neg.txt", mode='rt', encoding='utf-8') as rf: 
+with open("../data/train_neg_full.txt", mode='rt', encoding='utf-8') as rf: 
     
     size_neg=[]
     char_neg=[]
@@ -57,7 +57,7 @@ fig.savefig('../fig/Tweet_boxplot_char')
 char_tweet_T = [char_neg, char_pos]
 df = pd.DataFrame(char_tweet_T, index=["Negative","Positive"])
 plt.subplots(figsize=(14, 6))
-boxplot = df.T.boxplot(vert=False, fontsize=16, grid=False)
+boxplot = df.T.boxplot(vert=False, fontsize=16, grid=False, whiskerprops = dict(linestyle='-',linewidth=2.0, color='blue'))
 boxplot.set_xlabel('Number of character',fontsize=16)
 plt.show()
 plt.savefig('../fig/Tweet_boxplot_char_horizontal')
