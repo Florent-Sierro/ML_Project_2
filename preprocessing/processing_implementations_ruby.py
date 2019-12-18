@@ -263,7 +263,7 @@ def processing_tweet_ruby(full, file_name_out, remove_bracket, stemming, lemmati
         |--- lemmatization: [bool]  boolean to activate or not the Lemmatization
     """
 
-    path_data = '../data/twitter-datasets/'
+    path_data = '../data/'
     
     if full:
         file_name_pos = path_data + 'train_pos_full.txt'
