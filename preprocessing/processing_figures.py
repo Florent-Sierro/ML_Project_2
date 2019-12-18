@@ -6,23 +6,13 @@ Created on Fri Dec 13 15:41:51 2019
 """
 
 import numpy as np
-import matplotlib
 import matplotlib.pyplot as plt
-from sklearn.feature_extraction.text import CountVectorizer
+import pandas as pd
 
 
-with open("../data/twitter-datasets/train_neg_full.txt_full_RUBY.txt", mode='rt', encoding='utf-8') as rf: 
-    
-    size_neg=[]
-    char_neg=[]
-    for tweet in rf:
-        line =  tweet.strip()
-        char_neg.append(len(line))
-        words = line.split()
-        size_neg.append(len(words))
-        
-        
-with open("../data/twitter-datasets/train_pos_full.txt_full_RUBY.txt", mode='rt', encoding='utf-8') as rf: 
+
+
+with open("../data/train_pos.txt", mode='rt', encoding='utf-8') as rf: 
 
     indice=[]
     size_pos=[]
@@ -32,6 +22,20 @@ with open("../data/twitter-datasets/train_pos_full.txt_full_RUBY.txt", mode='rt'
         char_pos.append(len(line))
         words = line.split()
         size_pos.append(len(words))
+
+
+
+with open("../data/train_neg.txt", mode='rt', encoding='utf-8') as rf: 
+    
+    size_neg=[]
+    char_neg=[]
+    for tweet in rf:
+        line =  tweet.strip()
+        char_neg.append(len(line))
+        words = line.split()
+        size_neg.append(len(words))
+        
+
         
 
 #%% Plot of number of char
@@ -48,6 +52,15 @@ labels = ["Positive","Negative"]
 axes.set_xticklabels(labels)
 plt.show()
 fig.savefig('../fig/Tweet_boxplot_char')
+
+
+char_tweet_T = [char_neg, char_pos]
+df = pd.DataFrame(char_tweet_T, index=["Negative","Positive"])
+plt.subplots(figsize=(14, 6))
+boxplot = df.T.boxplot(vert=False, fontsize=16, grid=False)
+boxplot.set_xlabel('Number of character',fontsize=16)
+plt.show()
+plt.savefig('../fig/Tweet_boxplot_char_horizontal')
 
 
 #%% Plot of number of words
