@@ -32,8 +32,8 @@ labels = np.concatenate((np.ones((train_pos.shape[0],)), -1* np.ones((train_neg.
 train_tweets, val_tweets, train_labels, val_labels = train_test_split(train, labels, test_size=0.1, random_state=42, shuffle=True, stratify=labels)
  
 # Save train
-root = root +'/train'
-if not os.path.exists(root): os.mkdir(root)
+folder = root +'/train'
+if not os.path.exists(folder): os.mkdir(folder)
 df_train = pd.DataFrame(data= train_tweets, columns = ['Tweets']).to_csv(root +'/train.csv',index = False)
 with open(root+'/train_labels.pkl', 'wb') as f:
     pickler = pickle.Pickler(f)
@@ -41,8 +41,8 @@ with open(root+'/train_labels.pkl', 'wb') as f:
     f.close()
 
 # Save validation
-root = root +'/val'
-if not os.path.exists(root): os.mkdir(root)
+folder = root +'/val'
+if not os.path.exists(folder): os.mkdir(folder)
 df_val = pd.DataFrame(data= val_tweets, columns = ['Tweets']).to_csv(root +'/val.csv',index = False)
 with open(root+'/val_labels.pkl', 'wb') as f:
     pickler = pickle.Pickler(f)
