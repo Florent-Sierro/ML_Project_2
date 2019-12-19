@@ -10,18 +10,21 @@ Various Preprocessing techniques, Word Embeddings (GloVe, Word2Vec, Paragraph Em
 This project is part of the EPFL CS-433: Machine learning class.
 
 ## Folders
-* data: it contains 10% of the raw data, since the size of the whole data is too large, and also the cleaned one after being processed
+* data: it contains 10% of the raw data, since the size of the whole data is too large, and also the cleaned one using the Ruby preprocessing
 * dico: it contains a dictionnary (typo-corpus-r1.txt) of common english spelling errors, found on internet: http://luululu.com/tweet/
 * fig: it contains the figures made with our data
 * preprocessing: it contains python files to preprocess the data. There is several files since there is several way to preprocess the raw data
-* results: 
-* src: 
+* results: folder containing our submissions created once code is run
+* src: contains all pieces of codes requires to recreate the analysis described in our report
 
 ## Code  
 ...
 
 ## Run
-...
+
+
+* Run SVM classification : 
+     run split_data.py
 
 ## Necessary libraries
 * numpy
