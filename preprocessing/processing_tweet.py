@@ -3,14 +3,14 @@ from processing_implementations_ruby import processing_tweet_ruby
 from processing_implementations_extensive import processing_tweet_extensive
 
 file_path = "../data/twitter-datasets/"
-full = False
+full = True
 
 #%% Ruby
 remove_bracket = False 
 stemming = False
 lemmatization = False 
 
-Name_out = "_ruby"
+Name_out = "_Full_ruby"
 processing_tweet_ruby(full, Name_out, remove_bracket, stemming, lemmatization)
 
 
