@@ -24,7 +24,9 @@ This project is part of the EPFL CS-433: Machine learning class.
 
 
 * Run SVM classification : 
-     run split_data.py
++ run split_data.py
++ run embed_main.py
++ run train_main.py
 
 ## Necessary libraries
 * numpy
