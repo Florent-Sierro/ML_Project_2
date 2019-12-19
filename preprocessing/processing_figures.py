@@ -54,13 +54,13 @@ plt.show()
 fig.savefig('../fig/Tweet_boxplot_char')
 
 
-char_tweet_T = [char_neg, char_pos]
-df = pd.DataFrame(char_tweet_T, index=["Negative","Positive"])
-plt.subplots(figsize=(14, 6))
-boxplot = df.T.boxplot(vert=False, fontsize=16, grid=False, whiskerprops = dict(linestyle='-',linewidth=2.0, color='blue'))
-boxplot.set_xlabel('Number of character',fontsize=16)
-plt.show()
-plt.savefig('../fig/Tweet_boxplot_char_horizontal')
+#char_tweet_T = [char_neg, char_pos]
+#df = pd.DataFrame(char_tweet_T, index=["Negative","Positive"])
+#plt.subplots(figsize=(14, 6))
+#boxplot = df.T.boxplot(vert=False, fontsize=16, grid=False, whiskerprops = dict(linestyle='-',linewidth=2.0, color='blue'))
+#boxplot.set_xlabel('Number of character',fontsize=16)
+#plt.show()
+#plt.savefig('../fig/Tweet_boxplot_char_horizontal')
 
 
 #%% Plot of number of words
