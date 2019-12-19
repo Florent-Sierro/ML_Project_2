@@ -36,6 +36,6 @@ This project is part of the EPFL CS-433: Machine learning class.
 * ....
 
 ## Collaborators : BIZEUL Alice, DERVAUX Juliane, SIERRO Florent
-* Bizeul Alice:	 	bizeul.alice@epfl.ch
-* Dervaux Juliane:	dervaux.juliane@epfl.ch
+* Bizeul Alice:	 	alice.bizeul@epfl.ch
+* Dervaux Juliane:	juliane.dervaux@epfl.ch
 * Sierro Florent:	florent.sierro@epfl.ch
