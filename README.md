@@ -11,6 +11,7 @@ This project is part of the EPFL CS-433: Machine learning class.
 * data: it contains 10% of the raw data, since the size of the whole data is too large, and also the cleaned one after being processed
 * dico: it contains a dictionnary (typo-corpus-r1.txt) of common english spelling errors, found on internet: http://luululu.com/tweet/
 * preprocessing: it contains python files to preprocess the data. There is several files since there is several way to preprocess the raw data
+* src: 
 * fig: it contains the figures made with our data
 * 
 
@@ -29,11 +30,15 @@ This project is part of the EPFL CS-433: Machine learning class.
 * keras
 * sklearn
 * pickle
+* csv
 * itertools
 * string
 * glove_python 
 * gensim
-* ....
+* tensorflow
+* tempfile
+* random
+* scipy
 
 ## Collaborators : BIZEUL Alice, DERVAUX Juliane, SIERRO Florent
 * Bizeul Alice:	 	alice.bizeul@epfl.ch
