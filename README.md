@@ -21,9 +21,9 @@ This project is part of the EPFL CS-433: Machine learning class.
 ...
 
 ## Run
-* To preprocess the raw data, only processing_tweet.py needs to be run with the wanted settings
+
 * Run SVM classification : 
-> run split_data.py 
+<addr> run split_data.py 
 > run embed_main.py 
 > run train_main.py
 
