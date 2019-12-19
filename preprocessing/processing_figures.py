@@ -12,7 +12,7 @@ import pandas as pd
 
 
 
-with open("../data/train_pos_full.txt", mode='rt', encoding='utf-8') as rf: 
+with open("../data/train_pos_Full_ruby.txt", mode='rt', encoding='utf-8') as rf: 
 
     indice=[]
     size_pos=[]
@@ -25,7 +25,7 @@ with open("../data/train_pos_full.txt", mode='rt', encoding='utf-8') as rf:
 
 
 
-with open("../data/train_neg_full.txt", mode='rt', encoding='utf-8') as rf: 
+with open("../data/train_neg_Full_ruby.txt", mode='rt', encoding='utf-8') as rf: 
     
     size_neg=[]
     char_neg=[]
